@@ -33,7 +33,7 @@
 
           <div>
             <p class="text-zinc-500">Radno Vrijeme</p>
-            <p>Pon - Pet: 07:00 - 15:00</p>
+            <p>Pon - Pet: 07:00 - 15:00 ili po dogovoru</p>
           </div>
         </div>
       </div>
