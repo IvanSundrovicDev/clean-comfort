@@ -48,17 +48,17 @@ const submitForm = async (event) => {
 </script>
 
 <template>
-  <section id="kontakt" class="pt-32 pb-24">
-    <div class="section grid lg:grid-cols-2 gap-10">
-      <div class="card p-10">
-        <div class="text-left mb-12">
+  <section id="kontakt" class="pt-20 sm:pt-32 pb-16 sm:pb-24">
+    <div class="section grid lg:grid-cols-2 gap-6 sm:gap-10">
+      <div class="card p-6 sm:p-10">
+        <div class="text-left mb-8 sm:mb-12">
           <p
             class="text-primary text-sm font-semibold tracking-widest uppercase mb-4"
           >
             Javite nam se
           </p>
           <h2
-            class="font-heading text-3xl sm:text-4xl lg:text-6xl font-bold text-white"
+            class="font-heading text-2xl sm:text-4xl lg:text-6xl font-bold text-white"
           >
             Kontakt
             <br />
@@ -68,13 +68,13 @@ const submitForm = async (event) => {
               i podrška
             </span>
           </h2>
-          <p class="text-zinc-400 mt-6 max-w-2xl text-base sm:text-lg">
+          <p class="text-zinc-400 mt-4 sm:mt-6 max-w-2xl text-sm sm:text-lg">
             Pošaljite upit ili nas kontaktirajte direktno, odgovaramo brzo i
             prilagođavamo uslugu vašim potrebama!
           </p>
         </div>
 
-        <div class="mt-8 space-y-5">
+        <div class="mt-6 sm:mt-8 space-y-4 sm:space-y-5">
           <div class="flex items-center gap-4">
             <img src="/images/phone.svg" alt="Telefon" class="mt-1 w-6 h-6" />
 
@@ -135,7 +135,7 @@ const submitForm = async (event) => {
         method="POST"
         data-netlify="true"
         data-netlify-recaptcha="true"
-        class="card p-10 h-full flex flex-col space-y-6"
+        class="card p-6 sm:p-10 h-full flex flex-col space-y-5 sm:space-y-6"
         @submit.prevent="submitForm"
       >
         <input type="hidden" name="form-name" value="contact" />
@@ -144,7 +144,7 @@ const submitForm = async (event) => {
           v-model="formData.name"
           name="name"
           placeholder="Ime i prezime"
-          class="w-full bg-black border border-white/10 rounded-xl p-4 text-sm sm:text-base"
+          class="w-full bg-black border border-white/10 rounded-xl p-3 sm:p-4 text-sm sm:text-base"
           required
         />
 
@@ -153,7 +153,7 @@ const submitForm = async (event) => {
           name="email"
           type="email"
           placeholder="Email"
-          class="w-full bg-black border border-white/10 rounded-xl p-4 text-sm sm:text-base"
+          class="w-full bg-black border border-white/10 rounded-xl p-3 sm:p-4 text-sm sm:text-base"
           required
         />
 
@@ -162,7 +162,7 @@ const submitForm = async (event) => {
           name="phone"
           type="tel"
           placeholder="Broj telefona (opcionalno)"
-          class="w-full bg-black border border-white/10 rounded-xl p-4 text-sm sm:text-base"
+          class="w-full bg-black border border-white/10 rounded-xl p-3 sm:p-4 text-sm sm:text-base"
         />
 
         <textarea
@@ -170,7 +170,7 @@ const submitForm = async (event) => {
           name="message"
           rows="5"
           placeholder="Poruka"
-          class="w-full bg-black border border-white/10 rounded-xl p-4 text-sm sm:text-base"
+          class="w-full bg-black border border-white/10 rounded-xl p-3 sm:p-4 text-sm sm:text-base"
           required
         ></textarea>
 
@@ -179,7 +179,7 @@ const submitForm = async (event) => {
         <div class="mt-auto space-y-3">
           <button
             type="submit"
-            class="purple-gradient px-8 py-4 rounded-xl text-sm sm:text-base disabled:opacity-60 disabled:cursor-not-allowed"
+            class="purple-gradient px-6 sm:px-8 py-3 sm:py-4 rounded-xl text-sm sm:text-base disabled:opacity-60 disabled:cursor-not-allowed"
             :disabled="isSubmitting"
           >
             {{ isSubmitting ? "Slanje..." : "Pošalji upit" }}

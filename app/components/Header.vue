@@ -25,8 +25,12 @@ const closeMobileMenu = () => {
     class="fixed top-0 left-0 right-0 z-50 bg-black/90 backdrop-blur-sm border-b border-white/5 will-change-transform"
   >
     <div class="section">
-      <div class="h-24 flex items-center justify-between">
-        <img src="/images/logo.png" alt="Clean Comfort" class="h-14 w-auto" />
+      <div class="h-20 sm:h-24 flex items-center justify-between">
+        <img
+          src="/images/logo.png"
+          alt="Clean Comfort"
+          class="h-12 sm:h-14 w-auto"
+        />
 
         <nav class="hidden lg:flex items-center gap-10">
           <a
@@ -69,7 +73,7 @@ const closeMobileMenu = () => {
         <button
           v-if="isMobileMenuOpen"
           type="button"
-          class="lg:hidden fixed inset-0 top-24 bg-black/50 backdrop-blur-[1px]"
+          class="lg:hidden fixed inset-0 top-20 sm:top-24 bg-black/50 backdrop-blur-[1px]"
           aria-label="Zatvori izbornik"
           @click="closeMobileMenu"
         />
@@ -85,7 +89,7 @@ const closeMobileMenu = () => {
       >
         <div
           v-if="isMobileMenuOpen"
-          class="lg:hidden absolute top-[calc(100%-0.25rem)] left-4 right-4 rounded-2xl border border-white/10 bg-zinc-950/95 backdrop-blur-xl shadow-[0_24px_80px_rgba(0,0,0,0.55)] p-5"
+          class="lg:hidden absolute top-[calc(100%-0.25rem)] left-3 right-3 sm:left-4 sm:right-4 rounded-2xl border border-white/10 bg-zinc-950/95 backdrop-blur-xl shadow-[0_24px_80px_rgba(0,0,0,0.55)] p-4 sm:p-5"
         >
           <nav class="flex flex-col gap-2">
             <a

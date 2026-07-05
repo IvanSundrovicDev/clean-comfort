@@ -92,15 +92,17 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <section id="galerija" class="pt-20 pb-24">
+  <section id="galerija" class="pt-14 sm:pt-20 pb-16 sm:pb-24">
     <div class="section">
-      <div class="text-center mb-20 mt-8">
+      <div class="text-center mb-14 sm:mb-20 mt-6 sm:mt-8">
         <p
           class="text-primary text-sm font-semibold tracking-widest uppercase mb-4"
         >
           Naši radovi
         </p>
-        <h2 class="font-heading text-5xl lg:text-6xl font-bold text-white">
+        <h2
+          class="font-heading text-4xl sm:text-5xl lg:text-6xl font-bold text-white"
+        >
           Rezultati
           <br />
           <span
@@ -109,13 +111,17 @@ onUnmounted(() => {
             profesionalnog čišćenja
           </span>
         </h2>
-        <p class="text-zinc-400 mt-6 max-w-2xl mx-auto text-lg">
+        <p
+          class="text-zinc-400 mt-4 sm:mt-6 max-w-2xl mx-auto text-base sm:text-lg"
+        >
           Pogledajte dio naših projekata i uvjerite se u kvalitetu, detaljnost i
           završni dojam svake usluge
         </p>
       </div>
 
-      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 mt-16">
+      <div
+        class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-6 mt-10 sm:mt-16"
+      >
         <img
           v-for="image in images"
           :key="image"

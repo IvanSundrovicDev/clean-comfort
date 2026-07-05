@@ -36,16 +36,18 @@ const services = [
 <template>
   <section
     id="usluge"
-    class="relative pt-20 pb-32 -mb-16 bg-[radial-gradient(120%_90%_at_15%_20%,rgba(123,44,191,0.22)_0%,rgba(0,0,0,0)_60%),linear-gradient(180deg,#06070b_0%,#090811_70%,rgba(9,8,17,0)_100%)]"
+    class="relative pt-14 sm:pt-20 pb-20 sm:pb-32 -mb-10 sm:-mb-16 bg-[radial-gradient(120%_90%_at_15%_20%,rgba(123,44,191,0.22)_0%,rgba(0,0,0,0)_60%),linear-gradient(180deg,#06070b_0%,#090811_70%,rgba(9,8,17,0)_100%)]"
   >
     <div class="section">
-      <div class="text-center mb-20 mt-8">
+      <div class="text-center mb-14 sm:mb-20 mt-6 sm:mt-8">
         <p
           class="text-primary text-sm font-semibold tracking-widest uppercase mb-4"
         >
           Naše rješenja
         </p>
-        <h2 class="font-heading text-5xl lg:text-6xl font-bold text-white">
+        <h2
+          class="font-heading text-4xl sm:text-5xl lg:text-6xl font-bold text-white"
+        >
           Profesionalne
           <br />
           <span
@@ -54,26 +56,28 @@ const services = [
             usluge čišćenja
           </span>
         </h2>
-        <p class="text-zinc-400 mt-6 max-w-2xl mx-auto text-lg">
+        <p
+          class="text-zinc-400 mt-4 sm:mt-6 max-w-2xl mx-auto text-base sm:text-lg"
+        >
           Prilagođena rješenja za sve vrste prostora — od privatnih domova do
           poslovnih centara
         </p>
       </div>
 
       <div
-        class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4 mt-14"
+        class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-3 sm:gap-4 mt-10 sm:mt-14"
       >
         <article
           v-for="service in services"
           :key="service.title"
-          class="card card-background py-8 px-2 flex flex-col items-center text-center"
+          class="card card-background py-6 sm:py-8 px-3 sm:px-2 flex flex-col items-center text-center"
         >
           <img
             :src="service.icon"
             :alt="service.title"
             class="w-12 h-12 mb-4"
           />
-          <h3 class="text-xl font-semibold">
+          <h3 class="text-lg sm:text-xl font-semibold">
             {{ service.title }}
           </h3>
 

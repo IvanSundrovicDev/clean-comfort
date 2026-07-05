@@ -5,16 +5,51 @@
 
 html {
   scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+@media (width < 40rem) {
+  html {
+    font-size: 15px;
+  }
 }
 
 body {
   background: #000;
   color: white;
   font-family: "Inter", sans-serif;
+  overflow-x: clip;
+}
+
+img,
+video,
+canvas,
+svg,
+iframe,
+input,
+textarea,
+button {
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+li,
+span,
+button,
+label {
+  overflow-wrap: anywhere;
 }
 
 .section {
-  @apply max-w-7xl mx-auto px-6 lg:px-8;
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
 }
 
 .purple-gradient {
