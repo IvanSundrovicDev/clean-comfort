@@ -25,9 +25,9 @@ const services = [
     icon: "/images/cottage.svg",
   },
   {
-    title: "Pranje prozora i tepiha",
+    title: "Pranje prozora i tapeciranog namještaja",
     description:
-      "Profesionalno pranje stakala, prozora i tepiha kako bi vaš prostor bio svjež i čist. Koristimo sigurne i učinkovite metode čišćenja.",
+      "Profesionalno pranje stakala, prozora i tapeciranog namještaja kako bi vaš prostor bio svjež i čist. Koristimo sigurne i učinkovite metode čišćenja.",
     icon: "/images/window.svg",
   },
 ];

@@ -124,7 +124,7 @@ const submitForm = async (event) => {
             <div>
               <p class="text-zinc-500">Radno Vrijeme</p>
 
-              <p class="text-sm sm:text-base">Pon - Pet: 07:00 - 15:00</p>
+              <p class="text-sm sm:text-base">Pon - Pet: 07:00 - 15:00 ili po dogovoru</p>
             </div>
           </div>
         </div>
