@@ -5,7 +5,7 @@
         class="bg-black-fade-to-right pt-8 sm:pt-12 pb-14 sm:pb-24 lg:col-span-6 px-4 sm:px-10 lg:pl-12 lg:pr-20"
       >
         <h1
-          class="font-heading text-3xl sm:text-5xl md:text-6xl xl:text-7xl leading-tight lg:leading-18 xl:leading-20 uppercase"
+          class="font-heading text-4xl sm:text-5xl md:text-6xl xl:text-7xl leading-tight lg:leading-18 xl:leading-20 uppercase"
         >
           Profesionalno čišćenje za vaš
           <span class="text-primary">čist i zdrav prostor</span>

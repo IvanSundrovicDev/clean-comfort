@@ -46,7 +46,7 @@ const services = [
           Naše rješenja
         </p>
         <h2
-          class="font-heading text-4xl sm:text-5xl lg:text-6xl font-bold text-white"
+          class="font-heading text-3xl sm:text-5xl lg:text-6xl font-bold text-white"
         >
           Profesionalne
           <br />
