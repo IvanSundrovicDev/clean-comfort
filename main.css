@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap");
+
+@import "tailwindcss";
+@config "./tailwind.config.js";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #000;
+  color: white;
+  font-family: "Inter", sans-serif;
+}
+
+.section {
+  @apply max-w-7xl mx-auto px-6 lg:px-8;
+}
+
+.purple-gradient {
+  background: linear-gradient(135deg, #9d4edd 0%, #7b2cbf 100%);
+}
+
+.card {
+  @apply border
+  border-white/10
+  rounded-2xl
+  transition-all
+  duration-300;
+  background:
+    radial-gradient(
+      120% 70% at 50% 110%,
+      rgba(157, 78, 221, 0.12) 0%,
+      rgba(157, 78, 221, 0.06) 35%,
+      transparent 70%
+    ),
+    #0f0f10;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(157, 78, 221, 0.4);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  background-color: rgba(157, 78, 221, 0.025);
+  box-shadow: inset 3px 3px 15px rgba(157, 78, 221, 0.4);
+}
