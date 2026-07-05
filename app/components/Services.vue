@@ -43,7 +43,7 @@ const services = [
         <p
           class="text-primary text-sm font-semibold tracking-widest uppercase mb-4"
         >
-          Naše rješenja
+          Naša rješenja
         </p>
         <h2
           class="font-heading text-3xl sm:text-5xl lg:text-6xl font-bold text-white"

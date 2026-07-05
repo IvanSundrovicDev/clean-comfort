@@ -6,7 +6,7 @@ onMounted(() => {
     ([entry]) => {
       if (entry.isIntersecting) entry.target.classList.add("show");
     },
-    { threshold: 0.2 }
+    { threshold: 0.1 }
   );
 
   observer.observe(el.value);
